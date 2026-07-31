@@ -20,4 +20,4 @@ Android 端自动完成维词听力任务的辅助工具
 ![图三](https://github.com/jsijea/WeiciHearingAuto/blob/main/3.jpg)
 
 ## 许可证
-MIT License
+GPLv3
