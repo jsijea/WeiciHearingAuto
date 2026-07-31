@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<EditText
+			android:id="@+id/et_phone"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="手机号"
+			android:inputType="textPassword"
+			android:imeOptions="actionNext"/>
+
+		<CheckBox
+			android:id="@+id/cb_show_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="显示手机号"
+			android:layout_marginStart="8dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:layout_marginTop="8dp">
+
+		<EditText
+			android:id="@+id/et_password"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="密码"
+			android:inputType="textPassword"
+			android:imeOptions="actionNext"/>
+
+		<CheckBox
+			android:id="@+id/cb_show_password"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="显示密码"
+			android:layout_marginStart="8dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="8dp">
+
+		<EditText
+			android:id="@+id/et_task_id"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="任务ID"
+			android:inputType="number"
+			android:layout_marginEnd="8dp"/>
+
+		<EditText
+			android:id="@+id/et_duration"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="时长"
+			android:inputType="text"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="8dp">
+
+		<CheckBox
+			android:id="@+id/cb_self_select"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="自选错题"/>
+
+		<CheckBox
+			android:id="@+id/cb_output_log"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="输出错题原文"
+			android:layout_marginStart="8dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="4dp">
+
+		<EditText
+			android:id="@+id/et_wrong_count"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="错题数量"
+			android:inputType="number"
+			android:layout_marginEnd="8dp"/>
+
+		<EditText
+			android:id="@+id/et_wrong_ids"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="错题题号"
+			android:inputType="text"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="8dp"
+		android:baselineAligned="false"
+		android:gravity="center_vertical">
+
+		<Button
+			android:id="@+id/btn_start"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="4.5"
+			android:text="开始运行"
+			android:textSize="14sp"
+			android:layout_marginEnd="8dp"/>
+
+		<Button
+			android:id="@+id/btn_copy"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="复制日志"
+			android:textSize="14sp"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="#f0f0f0"
+		android:padding="8dp"
+		android:layout_marginTop="8dp">
+
+		<TextView
+			android:id="@+id/tv_log"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="日志将显示在此处..."
+			android:textSize="14sp"/>
+
+	</ScrollView>
+
+</LinearLayout>
+
